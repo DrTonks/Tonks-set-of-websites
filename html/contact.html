@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我！</title>
+    
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="shortgut icon" href="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/IMG_1512(20240928-154358).JPG">
+
+</head>
+<body>
+    <header>
+        <nav id="navbar"class="navbar" >
+            <ul>
+                <li><a href="index.html" >首页</a></li>
+                <li><a href="about.html">简介</a></li>
+                <li><a href="footprint.html" >足迹</a></li>
+            <li><a href="https://vitepress-document.tonks.top" target="_blank">文档</a></li>
+
+                <li><a href="#" class="active">联系</a></li>
+            </ul>
+            
+        </nav>
+       
+    </header>
+        <!-- 手机导航栏-->
+        <div id="phonenav">
+            <button class="openbut" id="openbut" onclick="getnav()">☰</button>
+       </div>
+    
+        <div id="overlay" class="overlay"></div><!--蒙版-->
+        
+        <div id="sidebar" class="sidebar">
+            <a  class="closebut" onclick="getnav()">☰</a>
+            <a href="index.html">首页</a>
+            <a href="about.html" >简介</a>
+            <a href="footprint.html">足迹</a>
+            <a href="https://vitepress-document.tonks.top" target="_blank">文档</a>
+            <a href="#" onclick="getnav()" class="active">联系</a>
+        </div>
+<div class="cardcon needToLoad" style="opacity:0;transition:opacity 1s ease-in-out">
+    <div class="card">
+        <ul class="cbody">
+            <li>
+                <img style="border-radius: 50%;border:2px solid #ffffff" src="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/QQ20241019-212358.png" alt="">
+                <div class="text">
+                    3064517736@qq.com
+                    <br><br>2024091202025@std.uestc.edu.com
+                </div>
+                
+                
+            </li>
+            <li>
+                <img src="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/IMG_1369(20240925-211659).JPG" alt="">
+                <div class="text">
+                    <a href="https://github.com/DrTonks" target="_blank">DrTonks<br><br>Github个人资料--></a>
+                </div>
+
+            </li>
+
+            <li>
+                <img style="border-radius: 50%;border:1px solid white;box-shadow:0 0 10px #fff" src="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/IMG_1512(20240928-154358).JPG" alt="">
+                <div class="text">
+                    <a href="https://user.qzone.qq.com/3064517736/" target="_blank">Dalek的QQ空间<br>Some people are worth<br> melting for.</a>
+                </div>
+            </li>
+            <li>
+                <img  style="border-radius: 50%;border:1px solid rgb(255, 203, 81);box-shadow:0 0 20px #ffffff" src="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/gif1.gif" class="bilibili">
+                <div class="text">
+                    <a href="https://space.bilibili.com/519765623" target="_blank">DrTonks的bilibili空间<br>暂无个性签名喔</a>
+                </div>
+            </li>
+            <li>
+                <img src="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/7E866F57565D903C0F30DE9B09B61763.png" class="longp">
+                <div class="text">   
+                    vivo 50
+                </div>
+            </li>
+            <li>
+                <img src="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/9090.JPG" >
+                <div class="text">
+                    我的其他网站:<br><br>
+                    <a href="https://vitepress-document.tonks.top" target="_blank">我的文档库(点击跳转)</a>
+                    <br><a href="https://vue-score-app.tonks.top" target="_blank">打分小程序(只推荐使用电脑访问喔)</a>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+    <ul class="cardbottom">
+        <li class="tubiao"><img src="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/QQ20241019-212358.png" alt=""></li>
+        <li class="tubiao"><img src="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/IMG_1508(20240928-150315).png" alt=""></li>
+        <li class="tubiao"><img class="qq" src="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/xiaotu%20(3).png" alt=""></li>
+        <li class="tubiao"><img src="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/xiaotu%20(2).png" alt=""></li>
+        <li class="tubiao"><img src="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/xiaotu%20(4).png" alt=""></li>
+        <li class="tubiao"><img class="qq" src="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/tubiao111.png" alt=""></li>
+
+    </ul>
+</div>
+
+<footer style="bottom: 0%;position:fixed;height:7vh">
+    <h4 style="top: 10%;">Dr.Tonks的博客</h4>
+    <h4>闽ICP备2024074456号-1</h4>
+
+</footer>
+
+ <div class="loading-wrapper" style="transition:opacity 1s;z-index:1000">
+    <span style="--i:1">L</span>
+    <span style="--i:2">o</span>
+    <span style="--i:3">a</span>
+    <span style="--i:4">d</span>
+    <span style="--i:5">i</span>
+    <span style="--i:6">n</span>
+    <span style="--i:7">g</span>
+    <span style="--i:8">.</span>
+    <span style="--i:9">.</span>
+    <span style="--i:10">.</span>
+    </div>
+
+
+
+
+        <script src="js/contact.js"></script>
+        <script src="js/index.js"></script>
+</body>
+</html>

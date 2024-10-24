@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tonks'blog的首页</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/time.css">
+    <link rel="shortgut icon" href="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/IMG_1512(20240928-154358).JPG">
+    
+</head>
+<body>
+    <!--桌面导航栏-->
+<header>
+    <nav id="navbar"class="navbar" >
+        <ul>
+            <li><a href="#" class="active">首页</a></li>
+            <li><a href="about.html">简介</a></li>
+            <li><a href="footprint.html">足迹</a></li>
+            <li><a href="https://vitepress-document.tonks.top" target="_blank">文档</a></li>
+            <li><a href="contact.html">联系</a></li>
+
+        </ul>
+        
+    </nav>
+   
+</header>
+    <!-- 手机导航栏-->
+    <div id="phonenav">
+        <button class="openbut" id="openbut" onclick="getnav()">☰</button>
+   </div>
+
+    <div id="overlay" class="overlay"></div><!--蒙版-->
+    
+    <div id="sidebar" class="sidebar">
+        <a  class="closebut" onclick="getnav()">☰</a>
+        <a href="#" onclick="getnav()" class="active">首页</a>
+        <a href="about.html">简介</a>
+        <a href="footprint.html">足迹</a>
+        <a href="vitepress-document.tonks.top">文档</a>
+        <a href="contact.html">联系</a>
+        
+    </div>
+<div class="needToLoad" style="opacity:0;transition:opacity 1s ease-in-out"> 
+   
+    <!--名片-->    
+<div id="idcard" class="idcard">
+    <!-- <div class="box3">
+        <a href="about.html">
+            <img  class="idimage" src="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/IMG_1369%2820240925-211659%29.JPG" >
+        </a>
+    </div> -->
+        <div class="cloth1"></div>
+        <div class="cloth2"></div>
+        <div class="cloth3"></div>
+        <div class="cloth4"></div>
+        <div id="idtext666">
+            <div class="box3">
+                <a href="about.html">
+                    <video id="myVideo" style="position: absolute;z-index:1;border-radius:50%;transition:opacity 1s;border :1px solid #fff" width="300" height="300" autoplay muted playsinline>
+                        <source src="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/xiaozhi1.mp4" type="video/mp4" style="border-radius:50%">
+                        视频坏掉了喔。
+                      </video>                    
+                    <img  class="idimage" id="idimage" src="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/IMG_1369%2820240925-211659%29.JPG" >
+                </a>
+            </div>
+            <p class="IDtext" >Dr.Tonks</p>
+            <p class="IDtext" style="font-family: 'youyuan'; font-weight:600">将点滴的喜悦编织成诗</p>
+        </div>
+</div>
+
+<div id="ph">
+    <a href="about.html">
+        <video id="myVideo2" style="position: absolute;z-index:1;border-radius:50%;transition:opacity 1s;border :1px solid #fff" width="300" height="300" autoplay muted playsinline>
+            <source src="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/xiaozhi1.mp4" type="video/mp4" style="border-radius:50%">
+            视频坏掉了喔。
+          </video>       
+        <img src="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/IMG_1369%2820240925-211659%29.JPG" >
+    </a>
+</div>
+
+    <!-- <div><h1>欢迎来到<a href="about.html">Tonks</a>的博客！</h1></div> -->
+    <div id="phoneCard">
+        
+        <h1 style="font-family: 'Lucida Handwriting';">Welcome to my blog!</h1>
+    
+    </div>
+    <hr>
+    <div class="dp" style="text-shadow: 0 0 10px #fff;">新章导视</div>
+    <hr>
+
+    <!--卡片-->
+        <div id="activepic" class="activepic">
+            <div class="box1">
+                <a href="footprint.html">
+                <div class="image1">
+                    <img src="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/38a8e3fd33be2370f6a01e2f5fe644e05630102.jpg">
+                </div>
+                <div class="content">
+                    <h2 class="h2-1">我的足迹</h2>
+                    <p class="h2-2">我从哪里来？我往何处去？</p>
+                </div></a>
+            </div>
+
+            <div class="box1">
+                <a href="about.html">
+                <div class="image1">
+                    <img src="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/IMG_1375.JPG">
+                </div>
+                <div class="content">
+                    <h2 class="h2-2">最新发布!</h2>
+                    <p class="h2-2">关于我自己-->简介</p>
+                </div></a>
+            </div>
+
+            <div class="box1">
+                <a href="https://vitepress-document.tonks.top/post/%E5%89%8D%E7%AB%AF%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98/%E5%8A%A8%E6%80%81%E5%8F%98%E5%8C%96%E6%90%9C%E7%B4%A2%E6%A0%8F.html"><div class="image1">
+                   <img src="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/IMG_1712(20241005-174549).JPG">
+                </div>
+                <div class="content">
+                    <h2 class="h2-3">每日一题：</h2>
+                    <p class="h2-3">想什么呢，哪有时间每天更新</p>
+                </div></a>
+            </div>
+        
+            <div class="box1">
+                <a href="https://vitepress-document.tonks.top/post/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B002.html" target="_blank">
+                <div class="image1">
+                    <img src="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/ml.PNG">
+                </div>
+                <div class="content">
+                    <h2 class="h2-4">机器学习笔记02</h2>
+                    <p class="h2-4">不是哥们，这是人学的？</p>
+                </div></a>
+            </div>
+            <div class="box1">
+                <a href="https://vitepress-document.tonks.top" target="_blank">
+                <div class="image1">
+                    <img src="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/9090.JPG">
+                </div>
+                <div class="content">
+                    <h2 class="h2-5">我的文档库</h2>
+                    <p class="h2-5-1">与时俱进</p>
+                </div></a>
+            </div>
+
+        </div>
+<hr>
+<div class="dp" style="color: rgb(160, 222, 255);text-shadow: 0 0 20px #ffffffd5;    background: rgba(99,99,99,0.6);
+">里程碑</div>
+
+<div class="time" id="time" style="position: relative;width:100%;background-size:cover;background-attachment: fixed">
+            <div class="header">
+            <h3 class="subtitle">Never give up,never give in.</h3>
+        </div>
+    <div class="timeline">
+        
+        <div class="item" data-text='"无名小卒，还是名扬天下？"
+清水寺，沙河僧，敲赛博木鱼，读科幻佛经；
+成功人士，巅峰住宅，
+会员制高级餐厅，刘禹锡和县陋室——
+欢迎来到，电子神技大学'>
+            <div>
+                <img class="img" src="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/dianzikejidax.JPG" alt="">
+                <h2 class="content-title">2024-9</h2>
+            </div>
+            <div class="content-des dianzi" >
+                成为一名光荣的电兵
+            </div>
+
+        </div>
+
+        <div class="item" data-text='故事没有结束。
+我要找回他。
+我知道我不能一次又一次地选择怯懦，我必须作出改变。
+高考的容错率比我想象中的高，人生也是。'>
+            <div>
+                <img class="img" src="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/ttt.PNG">
+                <h2 class="content-title">2024-6</h2>
+            </div>
+            <p class="content-des">
+                高考
+            </p>
+
+        </div>
+
+
+
+        <div class="item" data-text='最难忘的生日。
+
+青春是本太仓促的书，
+含着泪我一读再读。'>
+            <div>
+                <img class="img" src="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/hezhao.JPG" >
+                <h2 class="content-title">2023-12</h2>
+            </div>
+            <p class="content-des wangbuliao" >
+                忘不了
+            </p>
+
+        </div>
+
+
+
+
+
+
+        <div class="item" data-text='最人菜瘾大的一集。
+“你怎么做到的？”
+“学习，生活，人际关系，你总得打理好一个吧？”'>
+            <div>
+                <img class="img" src="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/ttttt.PNG" alt="">
+                <h2 class="content-title">2022</h2>
+            </div>
+            <p class="content-des">
+                患得患失，度日如年
+            </p>
+
+        </div>
+
+
+
+
+
+        <div class="item" data-text='命运的齿轮开始生锈——
+        
+唉唉，“雏凤”，“菁英”，不过如此。'>
+            <div>
+                <img class="img" src="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/t.PNG" alt="">
+                <h2 class="content-title">2021-9</h2>
+            </div>
+            <p class="content-des">
+                雏凤清于老凤声
+            </p>
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+</div>
+
+<footer >
+    <h4 style="top: 10%;">Dr.Tonks的博客</h4>
+    <h4>闽ICP备2024074456号-1</h4>
+
+</footer>
+</div>
+<div class="loading-wrapper" style="transition:opacity 1s;z-index:1000">
+    <span style="--i:1">L</span>
+    <span style="--i:2">o</span>
+    <span style="--i:3">a</span>
+    <span style="--i:4">d</span>
+    <span style="--i:5">i</span>
+    <span style="--i:6">n</span>
+    <span style="--i:7">g</span>
+    <span style="--i:8">.</span>
+    <span style="--i:9">.</span>
+    <span style="--i:10">.</span>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/video.js"></script>
+<script src="js/time.js"></script>
+</body>
+</html>

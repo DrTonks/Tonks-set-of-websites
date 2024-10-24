@@ -1,0 +1,58 @@
+
+@font-face {
+    font-family: "阿里妈妈刀隶体 Regular";font-weight: 400;src: url("//at.alicdn.com/wf/webfont/3LUqo1S6TwJF/TMrKrQJNW8qH.woff2") format("woff2"),
+    url("//at.alicdn.com/wf/webfont/3LUqo1S6TwJF/zdaq6z9gYD09.woff") format("woff");
+    font-display: swap;
+  }
+@font-face {
+    font-family: "得意黑 斜体";font-weight: 400;src: url("//at.alicdn.com/wf/webfont/3LUqo1S6TwJF/wU4Xy9ojTzQD.woff2") format("woff2"),
+    url("//at.alicdn.com/wf/webfont/3LUqo1S6TwJF/qSu20T1CqhWD.woff") format("woff");
+    font-display: swap;
+  }
+@font-face {
+    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/TESLA.ttf");
+    font-family: Tesla;
+}
+  
+@font-face {
+    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/PFDinTextCompPro-Medium.ttf");
+    font-family: pfd-medium;
+}
+@font-face {
+  font-family: "钉钉进步体 Regular";font-weight: 400;src: url("//at.alicdn.com/wf/webfont/3LUqo1S6TwJF/DFc1dcuyycrP.woff2") format("woff2"),
+  url("//at.alicdn.com/wf/webfont/3LUqo1S6TwJF/YoqJ56BQNmqS.woff") format("woff");
+  font-display: swap;
+}
+/* 在线链接服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+@font-face {
+  font-family: "阿里妈妈灵动体 VF Thin";src: url("//at.alicdn.com/wf/webfont/3LUqo1S6TwJF/xwRrpeu0lz4Q.woff2") format("woff2"),
+  url("//at.alicdn.com/wf/webfont/3LUqo1S6TwJF/mQHtVKeiiwT1.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Agile'; /* 这里定义一个字体名称 */
+  src: url('/font/font/AlimamaAgileVF-Thin.ttf') format('truetype'),
+       url('/font/font/AlimamaAgileVF-Thin.woff') format('woff'),
+       url('/font/font/AlimamaAgileVF-Thin.woff2') format('woff2'); /* 指定字体文件的路径和格式 */
+  font-weight: 400;
+  font-display: swap;
+  /* font-style: normal; */
+}
+/* 在线链接服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+@font-face {
+  font-family: "阿里妈妈方圆体 VF Regular";src: url("//at.alicdn.com/wf/webfont/3LUqo1S6TwJF/q1LjExBvGcU6.woff2") format("woff2"),
+  url("//at.alicdn.com/wf/webfont/3LUqo1S6TwJF/T70rJNWlFzcV.woff") format("woff");
+  font-display: swap;
+}
+/* 在线链接服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+@font-face {
+  font-family: "阿里妈妈数黑体 Bold";font-weight: 700;src: url("//at.alicdn.com/wf/webfont/3LUqo1S6TwJF/XxSoD1O0ydny.woff2") format("woff2"),
+  url("//at.alicdn.com/wf/webfont/3LUqo1S6TwJF/TIEw9DEgDfeE.woff") format("woff");
+  font-display: swap;
+}
+/* 在线链接服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+@font-face {
+  font-family: "思源宋体 Heavy";font-weight: 900;src: url("//at.alicdn.com/wf/webfont/3LUqo1S6TwJF/fdH9JUQxccCP.woff2") format("woff2"),
+  url("//at.alicdn.com/wf/webfont/3LUqo1S6TwJF/qAURgN6MZ9QP.woff") format("woff");
+  font-display: swap;
+}

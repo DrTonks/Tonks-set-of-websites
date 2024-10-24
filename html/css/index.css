@@ -1,0 +1,709 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+hr {
+    border: none; 
+    height: 2px; 
+    background-color: rgba(130, 127, 127, 0.204);
+}
+.dp{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 50px;
+    font-family: 'Microsoft JhengHei',sans-serif;
+    background-color: rgba(163, 163, 163, 0.175);
+    color: rgb(246, 242, 140);
+    font-weight: bold;
+}
+/*桌面端*/
+.navbar {
+    background-color: rgb(86, 93, 105);
+    height: 80px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
+    z-index: 999; 
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: space-around; 
+    width: 60%; 
+}
+.navbar a {
+    color: white; 
+    text-decoration: none; /*这才是下划线，一直以为是emphasis qwq*/
+    font-size: 24px; 
+    padding: 10px 20px;
+    transition:background-color 0.3s ease,  color 0.3s ease; /*backgroundcolor不亮，但是实际上生效了？*/
+    border-radius: 25px;
+    font-family:'youyuan',sans-serif;
+    font-weight: bold;
+}
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /*实际表现为白色透明？*/
+    color: #FFD700; 
+    border-radius: 8px; 
+}
+header {
+    top: 0;
+    position: fixed;
+    
+    left: 0;
+    width: 100%;
+    z-index: 999; 
+}
+body {
+    margin-top: 80px;
+     opacity: 0.8;
+     position: relative; /*一定记住子绝父相！*/
+    
+}
+/*桌面端背景*/
+body::before {
+    content: ''; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/xiaoli2.jpg') center no-repeat; /* 背景图片 */ /*一定要打两个点！表示上一个文件夹！*//*已老实，使用腾讯云图床*/
+    background-size: cover; 
+    opacity: 1; 
+    z-index: -1; 
+}
+/*移动端背景*/
+@media only screen and (max-width: 768px) {
+    body::before {
+        background: url('https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/xiaoli.png') center no-repeat; /* 移动端背景图片 */
+        background-size: cover;
+        /* background-attachment: fixed; */
+
+    }
+    .dp{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 30px;
+        font-family: 'songti',sans-serif;
+        background-color: rgba(163, 163, 163, 0.274);
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+    }
+}
+
+
+/*手机端导航栏*/
+#phonenav{
+    background-color: rgba(85, 89, 96, 0.6);
+    display: none;
+    top: 0;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    transition: 0.5s;
+}
+.openbut{
+    display: none;
+}
+.sidebar{
+    background-color: rgba(85, 89, 96, 0.779);
+    position: fixed;
+    top:0;
+    left:0;
+    width: 0;
+    overflow-x: hidden;/*不加这个会有字，因为盒子里的元素没隐藏*/
+    transition: 0.3s;
+    padding-top: 60px;
+    z-index: 90999; 
+    height: 100%;
+}
+.sidebar a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 20px 20px 50px 32px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 15px;
+    display: block;
+}
+
+.sidebar .closebut{
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 36px
+}
+
+.sidebar .active{/*不生效。9.26补充：生效了，由于更高级的navbar或者sidebar影响到了active，需要加上.sidebar/.navbar*/
+    color: yellow;
+    font-weight: bold;
+}
+/*手机版蒙版*/
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7); 
+    z-index: 9010;
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+.openbut{
+    background-color: rgba(85, 89, 96, 0.6);
+    text-decoration: none;
+    font-size: 25px;
+    display: none;
+    width: 40px; 
+    height: 40px; 
+    color: white;
+    border: none;
+
+}
+
+#phoneCard{
+    display: none;
+
+}
+#phoneCard h1{
+    color: rgb(251, 255, 0);
+    position: relative;
+    top: 40px;
+    
+}
+/* 9.27手机部分调整 */
+@media screen and (max-width:768px) {
+    .navbar{
+        display: none;
+    }
+    #phonenav{
+        display: block;
+        z-index: 3000;
+        
+    }
+    .openbut {
+        display: block;
+        z-index: 1;
+        transition: 1s;
+    }
+    #phoneCard{
+        display: flex ;
+        justify-content: center;
+        text-decoration: none;
+        z-index: 1;
+        height: 11vh;
+
+    }
+    .idcard div h1{
+        display: none;
+        position: absolute;
+        text-decoration: none;
+    }
+}
+
+
+
+.navbar .active{
+    color: yellow;
+    font-weight: bold;
+}
+
+/* 最开始想要做个名片来着。现在的样子其实应该命名为欢迎词，但是懒得改了 */
+/* 名片（？） */
+.idcard{
+    background-color: rgba(87, 87, 87, 0);
+    width: 100%;
+    display: block;
+    height: 80vh;
+    position: relative;
+    
+    border-radius: 5px; 
+    overflow: hidden;
+    
+}
+
+
+.box3{
+    display: flex;
+    width: 100%;
+    align-items: center; /*这个语句无效.??? */
+    overflow: hidden;
+    justify-content: center; 
+    z-index: 0;
+    align-items: center;
+}
+.box3 video{
+    opacity: 0;
+}
+.idcard:hover video{
+    opacity: 1;
+}
+.cloth1,
+.cloth2,
+.cloth3,
+.cloth4{
+    position: absolute;
+    width: 2000px;
+    height: 1000px;
+    filter: drop-shadow(4px 4px 12px rgba(171, 171, 171, 0.782));
+    background-size: cover;
+    opacity: 0.9;
+    transition: 1.4s;
+    
+}
+.cloth1::after,
+.cloth2::after,
+.cloth3::after,
+.cloth4::after{
+    content: "";
+    position: absolute;
+    width: 2000px;
+    height: 1000px;
+    background-image: url('https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/QQ20240929-152303.png');
+    /* background-color: #f5f5f4; */
+    
+}
+
+
+
+
+.idcard .cloth1{
+    left: -600px;
+    transform: rotateZ(100deg);
+    overflow: hidden;
+
+}
+.idcard .cloth1::after{
+    transform: rotateZ(-100deg);
+}
+
+.idcard .cloth2{
+    left: -670px;
+    transform: rotateZ(-100deg);
+    overflow: hidden;
+
+}
+.idcard .cloth2::after{
+    transform: rotateZ(100deg);
+}
+
+
+.idcard .cloth3{
+    right: -700px;
+    transform: rotateZ(105deg);
+    overflow: hidden;
+
+}
+.idcard .cloth3::after{
+    transform: rotateZ(-105deg);
+}
+
+
+.idcard .cloth4{
+    right: -750px;
+    transform: rotateZ(-100deg);
+    overflow: hidden;
+
+}
+.idcard .cloth4::after{
+    transform: rotateZ(100deg);
+}
+
+.idcard:hover .cloth1{
+    left: -1450px;
+}
+
+.idcard:hover .cloth2{
+    left: -1400px;
+}
+
+.idcard:hover .cloth3{
+    right: -1400px;
+}
+
+.idcard:hover .cloth4{
+    right: -1400px;
+}
+
+#idtext666{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    
+}
+
+.IDtext{
+    opacity: 0;
+    font: bold 100px 'Comic Sans MS';
+    letter-spacing: 8px;
+    background: linear-gradient(45deg, #ff6a00f7,#ffe364b9, #ff6a00f7);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: 0.8s;
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    animation: flow 3s linear infinite;
+    background-size: 260%;
+}
+@keyframes flow {
+    0% {
+        background-position: 0% 0%; 
+    }
+    100% {
+        background-position: 160% 0%; 
+    }
+}
+.idcard:hover .idimage{
+    opacity: 1;
+}
+.idcard:hover .IDtext{
+    opacity: 1;
+}
+.idcard .idimage{
+    border-radius: 50%;
+    border: 2px solid aliceblue;
+    box-shadow: 0 0 20px rgba(255, 229, 62, 0.712);
+    width: 300px;
+    height: auto;
+    opacity: 0;
+    transition: 1.3s;
+    
+}
+/* .idcard div {
+    font-size: 30px; 
+    color: rgb(251, 251, 251);
+    margin: 60px;
+    font-weight: bold;
+    text-decoration: none;
+} */
+.idcard div h1 a{
+    text-decoration: none;
+    color: aqua;
+}
+
+/*动--感--*/
+.activepic{
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center; 
+    margin: auto;
+    /* 3d和透视效果*/
+    transform-style: preserve-3d;
+    perspective: 800px;/*没有这个会很奇怪，不像是3D的*/
+}
+.activepic .box1{
+    transition: 0.3s;
+    width: 250px;
+    height: 400px;
+    margin: 10px;
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border: 5px solid #f5f5f4;
+    border-radius: 15px;
+}
+.activepic .box1 a{
+    justify-content: center;
+    overflow: hidden;
+    display: flex;
+}
+
+.activepic .box1 .content{
+    position: absolute;
+    bottom: 0;
+    padding: 15px;
+    opacity: 0; /* 隐藏 */
+    transition: opacity 0.3s; 
+    
+}
+.activepic .box1 .content h2{
+    z-index: 2;
+    font-family: 'songti',sans-serif;
+    
+}
+
+
+.activepic .box1 .content .h2-5{ 
+    font-weight: bold;
+    color:  #000000; 
+}
+.activepic .box1 .content .h2-5-1{ 
+    font-weight: bold;
+    color:  #ffffff; 
+}
+.activepic .box1 .content .h2-4{ 
+    font-weight: bold;
+    color:  #ff0000; 
+}
+.activepic .box1 .content .h2-3{ 
+    font-weight: bold;
+    color: #b301ff; 
+}
+.activepic .box1 .content .h2-2{ 
+    font-weight: bold;
+    color: #f5f5f4; 
+}
+.activepic .box1 .content .h2-1{ 
+    font-weight: bold;
+    color: #fdff99; 
+}
+
+
+
+ .activepic:hover .box1 {
+    transform: rotateY(15deg);
+} 
+
+.activepic .box1:hover .content {
+    opacity: 1; 
+}
+
+
+ .activepic .box1 .image1 img{
+    transform-style: preserve-3d;/* 不加这个会翻折(9.26:实测加了也没用,原因不在这里,是因为超过盒子部分被隐藏了,看着像翻折) */
+    width: 100%;
+    height: 100%;
+    border-radius:5px; 
+    object-fit: cover; 
+    /* 9.25:不起作用，为什么？9.26:突然可以了 */
+   
+} 
+/*9.25：无效但是不敢删  9.27：有效，别删*/
+.activepic .box1 .image1{
+    width: 100%;  
+    height: 100%;
+}
+
+
+
+ /*来点花样*/
+.activepic .box1:hover {
+     transform: rotateY(0deg) scale(1.1);
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.7);
+     z-index: 1;
+}
+.activepic .box1:hover~.box1 {
+    transform: rotateY(-15deg);
+}
+#ph{
+    display: none;
+}
+
+
+
+/* loading */
+.loading-wrapper{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    cursor: default;
+    position: fixed;
+    top: 0;
+}
+.loading-wrapper span{
+    position: relative;
+    display: inline-flex;
+    font-size: 5em;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    text-transform: uppercase;
+    font-weight: 800;
+    animation: loading 2s ease-in-out infinite;
+    animation-delay:calc(0.15s * var(--i)) ;
+}
+@keyframes loading{
+    0%{
+        transform: translateY(0px);
+        color: transparent;
+    }
+    20%{
+        transform: translateY(-60px);
+        color: #fff;
+        text-shadow: 0 0 5px #fff,
+        0 0 25px #fff,
+        0 0 50px #fff;
+
+    }    
+    40%,100%{
+        transform: translateY(0px);
+        color: transparent;
+        text-shadow: none;
+
+    }
+}
+
+
+
+
+
+/* 并非等号 */
+@media screen and (max-width:768px){
+    .activepic:hover .box1 {
+        transform: rotateY(0deg);
+    }
+    .activepic .box1:hover {
+        transform: rotateY(0deg) scale(1.1);
+       box-shadow: 0 25px 40px rgba(0, 0, 0, 0.7);
+        z-index: 1;
+   }
+   .activepic .box1:hover~.box1 {
+    transform: rotateY(0deg);
+}
+.activepic{
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    margin: auto;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    backface-visibility: hidden;
+   
+}
+.activepic .box1{
+    transform-style: preserve-3d; 
+    backface-visibility: hidden;
+    transition: 0.3s;
+    width: 125px;
+    height: 200px;
+    margin: 10px;
+    position: relative; 
+    
+}
+.idcard{
+    background-color: rgba(87, 87, 87, 0);
+    width: fit-content;
+    display: none;
+    border-radius: 5px; 
+    position: relative;
+}
+.idcard div {
+    position: absolute;
+    top: 0;
+}
+body {
+    margin-top: 0;
+     opacity: 0.8;
+     position: relative;     
+}
+.activepic .box1 .content {
+    opacity: 1; 
+    font-size: 10px;
+    font-weight: bold;
+    color: #f5f5f4;
+    
+}
+.activepic .box1 .content .h2-3{
+    opacity: 1; 
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;}
+#ph a img{
+        border-radius: 50%;
+        display: block;
+        width: 200px;
+        height: 200px;
+        border: 2px solid wheat;
+        box-shadow: 0 0 20px #ffffff;
+    }
+#ph{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        top: 40px;
+
+    }
+#ph a video{
+    border-radius: 50%;
+    display: block;
+    width: 200px;
+    height: 200px;
+    border: 2px solid wheat;
+    box-shadow: 0 0 20px #ffffff;
+}
+
+.loading-wrapper span{
+    font-size: 20px;
+}
+
+}
+
+
+@media (min-width:768px) and (max-width:1300px){
+    .navbar{
+        height: 8%;
+    }
+.cloth1,
+.cloth2,
+.cloth3,
+.cloth4{
+    position: absolute;
+    display: none;
+
+    
+}
+.cloth1::after,
+.cloth2::after,
+.cloth3::after,
+.cloth4::after{
+    content: "";
+    display: none;
+}
+.IDtext{
+    font: bold 50px 'Comic Sans MS';
+    letter-spacing: 8px;
+    color: rgba(255, 234, 0, 0.699);
+    transition: 0.8s;
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    opacity: 0.8;
+}
+.activepic .box1{
+    transform-style: preserve-3d; 
+    backface-visibility: hidden;
+    transition: 0.3s;
+    width: 23vh;
+    height: 40vh;
+    margin: 10px;
+    position: relative; 
+    
+}
+.idcard .idimage{
+    border-radius: 50%;
+    width: 200px;
+    height: auto;
+    opacity: 1;
+    transition: 1.5s;
+    
+}
+.idcard video{
+    height: 200px;
+    width: 200px;
+    opacity: 1;
+}
+
+.idcard{
+    height: fit-content;
+}
+}

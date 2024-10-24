@@ -1,0 +1,677 @@
+
+button:focus{
+    outline: none;
+    border: none;
+}
+
+
+
+
+
+.wholebody{
+    position: relative;
+    width: 100%;
+    
+
+}
+.unfold{
+    width: 100%;
+    height: 5vh;
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+}
+.unfoldBut_down{
+    transition:0.6s ease;
+    transform:scale(1)
+}
+.unfoldBut_up{
+    transition:0.6s ease;
+    transform:scale(0)
+}
+
+ .hiddenImg{
+    width: 100%;
+    opacity: 0;
+} 
+
+/* 响应式标记1 */
+#CDbar{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-in-out;
+}
+.chengdu{
+    position: relative;
+    width: 100%;
+    display: flex;
+    object-fit: cover;
+    /* height: fit-content;  */
+    overflow: hidden;
+    height: 95vh;
+}
+.chengdu>h1{
+    position: absolute;
+    font-size: 26em;
+    z-index: 2;
+    left: 5%;
+
+    letter-spacing: 10rem;
+    text-align: center;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    opacity: 0.7;
+    text-shadow: 0 0 20rem #000000;
+    transition:transform .5s ease,color .5s ease;
+    font-family: SimHei;
+}
+.chengdu:hover h1{
+    text-shadow: 0 0 40rem #ff8000c5;
+    opacity: 1;
+    color: rgb(255, 110, 20);
+
+    transform: scale(1.2);
+
+}
+#chengduimg1{
+    position: absolute;
+
+    /* width: 100%; 
+    */
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+
+}
+#chengduimg2{
+    position: absolute;
+    height: 100%;
+    object-fit: cover;
+    /* width: 100%; */
+    z-index: 3;
+}
+.chengduText1{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.dabeijing{
+    width: 100%;
+}
+.chengduText1 div .budiao{
+    position: absolute;
+    right:5%;
+    top: -10%;
+    width: 35%;
+
+    object-fit: cover;
+    border-radius: 15px;
+    border: 2PX solid white;
+}
+.chengduText1 div .dashi
+{
+    position: absolute;
+    left:5%;
+    top: 10%;
+    width: 40%;
+
+    object-fit: cover;
+    border-radius: 15px;
+}
+/* 响应式标记 */
+.chengduText1  span{
+    position: absolute;
+    width: 40%;
+    text-align: start;
+    left:5%;
+    bottom: 5%;
+    font-size: 60px;
+    z-index: 2;
+    font-weight: 900;
+    color: aliceblue;
+    text-shadow: 0 0 50px #000000;
+
+}
+.chengduText1  span p{
+    font-size: 30px;
+}
+
+.chengduText2{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-top: -10px;
+}
+.bowuguan{
+    position: absolute;
+    z-index: 1;
+
+}
+.chengduText2 .bowuguan:nth-child(3){
+    left: 2%;
+    width: 40%;
+    border: 2px solid rgb(255, 255, 255);
+    opacity: 0;
+    transition: .6s;
+    position: absolute;
+}
+.chengduText2 .bowuguan:nth-child(3):hover{
+    opacity: 1;
+    cursor: pointer;
+    box-shadow: 0 0 50px #ffffff;
+}
+#ayhswl{
+    opacity: 0;
+    transition: .6s;
+    margin-left:40px;
+}
+.chengduText2 .bowuguan:nth-child(3):hover~#ayhswl{
+    opacity: 1;
+
+}
+.chengduText2 .bowuguan:nth-child(2){
+    left: 2%;
+    width: 40%;
+    border: 2px solid wheat;
+}
+.chengduText2 .bowuguan:nth-child(4){
+    right: 0;
+    bottom: 0;
+    width: 30%;
+    border-radius: 20px;
+
+}
+/* 枪 */
+.chengduText2 .bowuguan:nth-child(5){
+    left: 0;
+    bottom: 0%;
+    width: 30%;
+    border-radius: 50%;
+    height: 20%;
+    object-fit: cover;
+
+}.chengduText2 .bowuguan:nth-child(6){
+    right: 0;
+    top: 40%;
+    width: 35%;
+    border-radius: 50%;
+    transition: 1s;
+}.chengduText2 .bowuguan:nth-child(6):hover{
+    border-radius: 15px;
+
+}
+.chengduText2 div{
+    left: 2%;
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    font-size: 2rem;
+    font-weight: bold;
+    color: aliceblue;
+    text-align: center;
+}
+
+
+
+
+
+/* 广州 */
+.guangdong{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    height: fit-content;
+    position: relative;
+    /* top: 10%; */
+    overflow: hidden;
+    /* height: 950vh; */
+    /* 记得把height改了！！！ */
+}
+.guangdongBack{
+    background-image: url('https://tuce-1329849192.cos.ap-chengdu.myqcloud.com/IMG_1446(20241018-160957).JPG');
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%;
+    line-height: 80vh;
+    font: 900 20rem '';
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    text-align: center;
+    overflow: hidden;
+    z-index: 1;
+    margin-left: 8vh;
+    letter-spacing: 10rem;
+    text-shadow: 0 0 5rem #ffffff87
+}
+/* .guangdongBackImg {
+    content: '';
+    background-size: cover;
+    background-image: url('https://tuce-1329849192.cos.ap-chengdu.myqcloud.com/21A1A03B07D62F4A853AA613AEB20FB5(20241017-163838).png');
+    height: 100%;
+    width: 100%;
+    background-position: 50% 50%;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+} */
+.guangdongBackImg{
+    position: absolute;
+    object-fit: cover;
+
+    width: 100%;
+    z-index: -1;
+    top: 0vh;
+    /* height: 100vh; */
+
+}
+.guangdongBack1{
+    position: relative;
+}
+/* 福建 */
+#FJbar{
+    max-height: 0;
+    transition: max-height 1s ease-in-out;
+
+    overflow: hidden;
+}
+.fujian{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+}
+.FujianFont{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    top: 10%;
+    font-size: 10rem;
+    z-index: 1;
+    letter-spacing: 100px;
+
+
+}
+.FujianFont .fu{
+    transform: translate(-20rem,40rem);
+    transition: 1s;
+    opacity: 0;
+    color: aliceblue;
+
+}
+.FujianFont .jian{
+    transform: translate(20rem,-20rem);
+    transition: 1s;
+    opacity: 0;
+    color: aliceblue;
+
+
+}
+.fujian:hover .FujianFont .fu{
+    opacity: 1;
+    transform: translate(0,0);
+    color: transparent; /* 使文字颜色透明，以便背景渐变能够显示 */
+    background-image: linear-gradient(to right, rgb(0, 217, 255), rgb(13, 167, 251),rgb(99, 138, 255)); /* 设置渐变背景 */
+    -webkit-background-clip: text; /* 将背景裁剪为文字形状 */
+    background-clip: text;
+    display: inline-block; /* 使背景大小与文字大小相同 */
+    text-shadow: 0 0 100px #ffffff;
+
+}
+.fujian:hover .FujianFont .jian{
+    opacity: 1;
+    transform: translate(0,0);
+    color: transparent; /* 使文字颜色透明，以便背景渐变能够显示 */
+    background-image: linear-gradient(to right, rgb(99, 138, 255), rgb(15, 34, 247)); /* 设置渐变背景 */
+    -webkit-background-clip: text; /* 将背景裁剪为文字形状 */
+    background-clip: text;
+    display: inline-block; /* 使背景大小与文字大小相同 */
+    text-shadow: 0 0 100px #ffffff;
+}
+.fujian:hover .FujianFont.span{
+    opacity: 1;
+    text-shadow: 0 0 10px #ffffff74;
+
+}
+.FujianFont.span{
+    transition:opacity 1s ease;
+    transition-delay:0.4s ;
+    position: absolute;
+    opacity: 0;
+    top: 75%;
+    font-size: 5rem;
+    font-weight: bold;
+    letter-spacing: 20px;
+    color: wheat; /* 使文字颜色透明，以便背景渐变能够显示 */
+
+}
+.fujian .fujianImg{
+    width: 100%;
+    height: 95vh;
+    object-fit: cover;
+}
+
+#FujianBox{
+    max-height: 0;overflow:hidden;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url('https://tuce-1329849192.cos.ap-chengdu.myqcloud.com/IMG_2402.GIF');
+    background-size: 500px auto;
+}
+.FujianBox input{
+    appearance: none;
+
+}
+.FujianBox .dots{
+    position: absolute;
+    bottom: 70px;
+    z-index: 100;
+    display: flex;
+    gap: 6px;
+}
+.FujianBox .dots label{
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    cursor: pointer;
+    border-radius:50% ;
+    opacity: 0.5;
+    border: 2px solid #222;
+}
+.FujianBox input:nth-child(1):checked ~ .dots label:nth-child(1),
+.FujianBox input:nth-child(2):checked ~ .dots label:nth-child(2),
+.FujianBox input:nth-child(3):checked ~ .dots label:nth-child(3),
+.FujianBox input:nth-child(4):checked ~ .dots label:nth-child(4),
+.FujianBox input:nth-child(5):checked ~ .dots label:nth-child(5),
+.FujianBox input:nth-child(6):checked ~ .dots label:nth-child(6)
+{
+    opacity: 1;
+}
+.FujianBox .Fujianslider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.FujianBox .Fujianslider .FJslide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--img);
+    background-size: cover;
+    clip-path: circle(0% at 0% 50%);
+    transition: 1.5s;
+    transition-delay: 0s;
+    background-position: left;
+}
+.FujianBox .Fujianslider .FJslide:nth-child(even){
+    clip-path: circle(0% at 100% 50%);
+    background-position: right;
+
+
+}
+.FujianBox input:nth-child(1):checked ~ .Fujianslider .FJslide:nth-child(1),
+.FujianBox input:nth-child(2):checked ~ .Fujianslider .FJslide:nth-child(2),
+.FujianBox input:nth-child(3):checked ~ .Fujianslider .FJslide:nth-child(3),
+.FujianBox input:nth-child(4):checked ~ .Fujianslider .FJslide:nth-child(4),
+.FujianBox input:nth-child(5):checked ~ .Fujianslider .FJslide:nth-child(5),
+.FujianBox input:nth-child(6):checked ~ .Fujianslider .FJslide:nth-child(6){
+    clip-path: circle(150% at 50% 50%);
+    transition-delay: 1s;
+    background-position: center;
+
+
+}
+.FJcontent{
+    height: 43%;
+    position: absolute;
+    left: 30%;
+    top: 60%;
+
+}
+.FJcontent h2{
+    text-shadow:0 0 20px #000000;
+    color: #fff;
+    font-size: 3em;
+    line-height: 3em;
+}
+.FJcontent p{
+    font-weight: bold;
+    color: #ff9008;
+    font-size: 2em;
+    text-shadow:0 0 20px #222;
+}
+.FJcontent span{
+    font-weight: bold;
+    position: absolute;
+    bottom: 10%;
+    left: -100%;
+}
+@media (max-width:1300px) and (min-width : 768px) {
+    .wholebody{
+        margin-top: -8vh;
+    }
+    .chengdu{
+        height: 95vh; 
+
+    }
+    .chengdu #chengduimg1,
+    .chengdu #chengduimg2
+    {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #chengduTitle{
+        font-size: 200px;
+        top: 30%;
+        left: 0%;
+        letter-spacing: 80px;
+    }
+    .chengdu:hover #chengduTitle{
+        text-shadow: 0 0 40rem #ff0000;
+        color: #ff5512;
+
+    }
+    .chengduText1 span{
+        font-size: 50px;
+        opacity: 1;
+        text-shadow: 0 10px 20px #000000;
+    }
+    .chengduText1 div .budiao{
+        top: 5%;
+    }
+    .chengduText1 div .dashi{
+        top: 40%;
+    }
+    .chengduText1 span p{
+        font-size: 40px;
+        opacity: 1;
+        text-shadow: 0 10px 20px #000000;
+    }
+    .chengduText2 div{
+        text-align: start;
+        
+    }
+    .chengduText2 div h1{
+        font-size: 50px;
+
+    }
+    .chengduText2 div span{
+        font-size: 28px;
+
+    }
+    .guangdong{
+        width: 100%;
+        overflow: hidden;
+        /* height: fit-content; */
+    }
+    .guangdongBack{
+        /* font-size: 80px;
+        width: 100%;
+        letter-spacing: 10px;
+        margin-left: 10px; */
+        text-shadow: 0 0 10px #ffffff3c;
+
+        font-size: 12rem;
+        top: 20%;
+    }
+
+}
+
+
+@media screen and (max-width : 768px) {
+    .chengdu{
+        height: 500px;
+
+    }
+    .chengdu #chengduimg1,
+    .chengdu #chengduimg2
+    {
+        height: 100%;
+        object-fit: cover;
+    }
+    #chengduTitle{
+        font-size: 100px;
+        top: 35%;
+        left: 0%;
+        transition: 0.34s;
+        letter-spacing: 20px;
+
+    }
+    .chengdu:hover #chengduTitle{
+        text-shadow: 0 0 40rem #ff0000;
+        color: #ff5512;
+
+    }
+    .chengduText1 span{
+        font-size: 25px;
+        opacity: 1;
+        text-shadow: 0 10px 20px #000000;
+    }
+    .chengduText1 div .budiao{
+        top: 5%;
+    }
+    .chengduText1 div .dashi{
+        top: 40%;
+    }
+    .chengduText1 span p{
+        font-size: 20px;
+        opacity: 1;
+        text-shadow: 0 10px 20px #000000;
+    }
+    .chengduText2 div{
+        text-align: start;
+        font-size: 1rem;
+    }
+    .chengduText2 div h1{
+        font-size: 25px;
+
+    }
+    .chengduText2 div span{
+        font-size: 14px;
+
+    }
+    .guangdong{
+        width: 100%;
+        overflow: hidden;
+        /* height: fit-content; */
+        height: 500px;
+
+    }
+    .guangdongBack{
+        position: relative;
+        top: 30%;
+        font-size: 80px;
+        width: 100%;
+        letter-spacing: 10px;
+        margin-left: 10px;
+        text-shadow: 0 0 10px #ffffff87;
+
+    }
+    .guangdongBackImg{
+        height: 100%;
+        object-fit: cover;
+    }
+    .guangdongBack1{
+        position: relative;
+        height: 500px;
+
+    }
+    /* 啊呀，害死我了 */
+    #ayhswl{
+        display: none;
+
+    }
+    #fujian{
+        width: 100%;
+        height: 500px;
+        align-items: center;
+    }
+    #fujian h1{
+        transform: translate(0,0);
+        opacity: 1;
+        margin-top: 20%;
+        font-size: 100px;
+        letter-spacing: 10px;
+    }
+    .FujianFont.span{
+       color: #000000;
+       opacity: 0.5;
+    }
+    #fujian .FujianFont .fu{
+        opacity: 1;
+        color: transparent; /* 使文字颜色透明，以便背景渐变能够显示 */
+        background-image: linear-gradient(to right, rgb(99, 138, 255), rgb(15, 34, 247)); /* 设置渐变背景 */
+        -webkit-background-clip: text; /* 将背景裁剪为文字形状 */
+        background-clip: text;
+        display: inline-block; /* 使背景大小与文字大小相同 */
+        text-shadow: 0 0 100px #ffffff;
+    }
+    #fujian .FujianFont .jian{
+        opacity: 1;
+        color: transparent; /* 使文字颜色透明，以便背景渐变能够显示 */
+        background-image: linear-gradient(to right, rgb(99, 138, 255), rgb(15, 34, 247)); /* 设置渐变背景 */
+        -webkit-background-clip: text; /* 将背景裁剪为文字形状 */
+        background-clip: text;
+        display: inline-block; /* 使背景大小与文字大小相同 */
+        text-shadow: 0 0 100px #ffffff;
+    }
+    #fujian .fujianImg{
+        position: absolute;
+        top: -45%;
+    }
+    #FujianBox{
+        overflow: hidden;
+    }
+    .FJcontent h2{
+        color: #fff;
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .FJcontent p{
+        font-weight: bold;
+        color: #000000;
+        font-size: 20px;
+        text-shadow:0 0 20px #ffffff;
+    }
+    .FJcontent span{
+        display: none;
+}
+}

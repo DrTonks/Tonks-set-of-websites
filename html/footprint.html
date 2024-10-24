@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tonks的足迹</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/guangdong.css">
+    <link rel="stylesheet" href="css/footprint.css">
+    <link rel="shortgut icon" href="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/IMG_1512(20240928-154358).JPG">
+    <link rel="stylesheet" href="css/iconfont.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar"class="navbar" >
+            <ul>
+                <li><a href="index.html" >首页</a></li>
+                <li><a href="about.html">简介</a></li>
+                <li><a href="#" class="active">足迹</a>
+                </li>
+            <li><a href="https://vitepress-document.tonks.top" target="_blank">文档</a></li>
+
+                <li><a href="contact.html">联系</a></li>
+            </ul>
+            
+        </nav>
+       
+    </header>
+        <!-- 手机导航栏-->
+        <div id="phonenav">
+            <button class="openbut" id="openbut" onclick="getnav()">☰</button>
+       </div>
+    
+        <div id="overlay" class="overlay"></div><!--蒙版-->
+        
+        <div id="sidebar" class="sidebar">
+            <a  class="closebut" onclick="getnav()">☰</a>
+            <a href="index.html">首页</a>
+            <a href="about.html">简介</a>
+            <a href="#" onclick="getnav()" class="active">足迹</a>
+            <a href="https://vitepress-document.tonks.top" target="_blank">文档</a>
+            <a href="contact.html">联系</a>
+            
+        </div>
+<div class="needToLoad" style="opacity:0;transition:opacity 1s"> 
+
+        <!-- <div class="sidebar-1">
+            <div class="innerdiv1" ><h3>目录</h3></div>
+            <div class="innerdiv2">
+                 -->
+                <!--  <a href="#weiguang"><img src="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/IMG_1374.PNG" class="innerimg">关于微光</a> -->
+ 
+                <!-- <a href="#guang"><img src="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/IMG_0397.PNG" class="innerimg">广东旅游相册集</a>
+                <br>
+                <a href="#teli"><img src="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/cg%2822%29.png" class="innerimg">特莉波卡！</a>
+            
+            </div>
+        </div>
+
+   
+    <a href="blog.html#showplace"  class="link" blogfile="./post/guang.html">
+        <div class="blog">
+            <img src="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/beiyunshan.JPG" class="blogimg">
+            <div id="guang">
+                <h1>广州旅行相册！</h1>
+                
+                <h4>记录美好生活</h4>
+                
+            </div>
+        </div>
+    </a>
+
+    <a href="blog.html#showplace"  class="link" blogfile="./post/teli.html">
+        <div class="blog">
+            <img src="https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/cg(22).png" class="blogimg">
+            <div id="teli">
+                <h1>特莉波卡！</h1>  
+                <h4>高清壁纸分享</h4>
+                
+            </div>
+        </div>
+    </a>
+
+    <div class="showplace" id="showplace" ></div>
+
+ -->
+
+<div class="wholebody">
+    <div class="chengdu">
+        <h1 id="chengduTitle" style="font-family: 阿里妈妈刀隶体 Regular;" >成都</h1>
+        <img id="chengduimg1" src="https://tuce-1329849192.cos.ap-chengdu.myqcloud.com/%E6%88%90%E9%83%BD%E8%83%8C%E6%99%AF.jpg" alt="">
+        <img id="chengduimg2" src="https://tuce-1329849192.cos.ap-chengdu.myqcloud.com/IMG_2120.png" alt="">
+        <img class="hiddenImg" src="https://tuce-1329849192.cos.ap-chengdu.myqcloud.com/%E6%88%90%E9%83%BD%E8%83%8C%E6%99%AF.jpg" alt="">
+    </div>
+    <button class="unfold" style="display:flex;justify-content:center; background-color: rgba(85, 89, 96, 0.938);">
+        <img  id="unfoldImg1" class="unfoldBut_down" src="font/angle-double-down.svg" style="position:absolute;height:100%;
+        " >
+        <img id="unfoldImg2" class="unfoldBut_up" src="font/angle-double-up.svg" style="position:absolute;height:100%;
+        " >
+    </button>
+
+    <div id="CDbar">
+
+        <div class="chengduText1">
+
+            <img class="dabeijing"  src="https://tuce-1329849192.cos.ap-chengdu.myqcloud.com/chengdu%20(2).JPG" alt="四川美术馆">
+
+            <div >
+                <img class="float budiao"  src="https://tuce-1329849192.cos.ap-chengdu.myqcloud.com/chengdu%20(1).JPG" alt="四川美术馆图片">
+
+            </div>
+
+             <div>
+                <img class="float dashi"  src="https://tuce-1329849192.cos.ap-chengdu.myqcloud.com/chengdu%20(1).png" alt="四川美术馆图片">
+            
+            </div>
+            <span>四川美术馆：好看<br><p>然而同行的一位帅哥锐评：<br>不够抽象(*^_^*)</p></span>
+        </div>
+        <div class="chengduText2">
+            <img class="dabeijing"  src="https://tuce-1329849192.cos.ap-chengdu.myqcloud.com/bowuguan%20(3).JPG" alt="成都博物馆">
+
+            <img class="bowuguan"  src="https://tuce-1329849192.cos.ap-chengdu.myqcloud.com/IMG_17713.png" alt=" 雕像">
+            <img class="bowuguan" src="https://tuce-1329849192.cos.ap-chengdu.myqcloud.com/IMG_1773.png" alt="">
+
+            <img class="bowuguan" src="https://tuce-1329849192.cos.ap-chengdu.myqcloud.com/bowuguan%20(4).JPG" alt="狮子">
+            <img class="bowuguan" src="https://tuce-1329849192.cos.ap-chengdu.myqcloud.com/bowuguan%20(2).JPG" alt="枪">
+            <img class="bowuguan" src="https://tuce-1329849192.cos.ap-chengdu.myqcloud.com/bowuguan%20(1).JPG" alt="书桌">
+           <div>
+            <h1>成都博物馆：</h1>
+            <span>展区比科技馆多，</span><br>
+            <span>楼层比科技馆高，</span><br>
+            <span>糖人比科技馆少，</span><br>
+            <span>展品比科技馆好。</span>
+
+           </div>
+            <div id="ayhswl" style="top: 35%; z-index: 4;">
+                <h2 >啊呀，骇死我力</h2>
+            </div>
+
+        </div>
+        <button class="unfold" style="bottom: 0;margin-top:-5px;display:flex;justify-content:center; background-color: rgba(85, 89, 96, 0.938);">
+
+            <img  src="font/angle-double-up.svg" style="position:absolute;height:100%;
+            " >
+        </button>
+
+    </div>
+
+
+
+    <div class="guangdong">
+        <div class="guangdongBack" style="font-family: 得意黑 斜体;"><h1>广东</h1></div>
+        <img class="guangdongBackImg" style="z-index: 2;" src="https://tuce-1329849192.cos.ap-chengdu.myqcloud.com/21A1A03B07D62F4A853AA613AEB20FB5(20241017-163838999).png" alt="">
+    
+        <img class="guangdongBackImg"  src="https://tuce-1329849192.cos.ap-chengdu.myqcloud.com/21A1A03B07D62F4A853AA613AEB20FB5(20241017-163839).png" alt="">
+
+        <img class="hiddenImg guangdongBack1"  src="https://tuce-1329849192.cos.ap-chengdu.myqcloud.com/21A1A03B07D62F4A853AA613AEB20FB5(20241017-163839).png" alt="">
+
+    </div>
+    <button class="unfold" style="display:flex;justify-content:center; background-color: rgba(85, 89, 96, 0.938);margin-top:-5px">
+        <img  id="unfoldImg3" class="unfoldBut_down" src="font/angle-double-down.svg" style="position:absolute;height:100%;
+        " >
+        <img id="unfoldImg4" class="unfoldBut_up" src="font/angle-double-up.svg" style="position:absolute;height:100%;
+        " >
+    </button>
+    <div id="GDbar">
+        <div id="GDBar">
+            <div class="slider">
+                <input name="control" id="page1" type="radio" checked/>
+                <input name="control" id="page2" type="radio"/>
+                <input name="control" id="page3" type="radio"/>
+                <input name="control" id="page4" type="radio"/>
+                <input name="control" id="page5" type="radio"/>
+
+                <div class="slider--el slider--el-1 anim-4parts">    
+                  <!-- 第一张图背景分为4个区域，为后面动画做调整 -->
+                  <div class="slider--el-bg">
+                    <div class="part top left"></div>
+                    <div class="part top right"></div>
+                    <div class="part bot left"></div>
+                    <div class="part bot right"></div>
+                  </div>
+                  <div class="slider--el-content">
+                    <!-- 文字部分只是随意写的，可以修改成你使用的 -->
+                    <h2 class="slider--el-heading-h2" style="font-family: 钉钉进步体 Regular;">广州水上巴士</h2>
+                    <h4 class="slider--el-heading-h4" style="text-transform:uppercase" >guangzhou Water bus</h4>
+
+                  </div>
+                </div>
+            
+                <div class="slider--el slider--el-2 anim-9parts">
+                  <!-- 第二张图背景分为9个区域，为后面动画做调整 -->
+                  <div class="slider--el-bg">
+                    <div class="part left-top"></div>
+                    <div class="part mid-top"></div>
+                    <div class="part right-top"></div>
+                    <div class="part left-mid"></div>
+                    <div class="part mid-mid"></div>
+                    <div class="part right-mid"></div>
+                    <div class="part left-bot"></div>
+                    <div class="part mid-bot"></div>
+                    <div class="part right-bot"></div>
+                  </div>
+                  <div class="slider--el-content">
+                    <!-- 文字部分只是随意写的，可以修改成你使用的 -->
+                    <h2 class="slider--el-heading-h2" style="font-family: 阿里妈妈数黑体 Bold;">深圳上空</h2>
+ 
+                    <h4 class="slider--el-heading-h4" style="font-family: pfd-medium; text-transform: uppercase;text-shadow:0 10px 10px #fff">Shenzhen Financial Center Building</h4>
+
+                  </div>
+                </div>
+            
+                <div class="slider--el slider--el-3 anim-5parts">
+                  <!-- 第三张图背景分为5个区域，为后面动画做调整 -->
+                  <div class="slider--el-bg">
+                    <div class="part part-1"></div>
+                    <div class="part part-2"></div>
+                    <div class="part part-3"></div>
+                    <div class="part part-4"></div>
+                    <div class="part part-5"></div>
+                  </div>
+                  <div class="slider--el-content">
+                    <!-- 文字部分只是随意写的，可以修改成你使用的 -->
+                    <h2 class="slider--el-heading-h2" style="font-family: 阿里妈妈方圆体 VF Regular;">白云山绝景</h2>
+                    <h4 class="slider--el-heading-h4" style="font-family:Agile;color:antiquewhite">Bai Yun Shan</h4>
+
+                  </div>
+                </div>
+            
+                <div class="slider--el slider--el-4 anim-3parts">
+                  <!-- 第四张图背景分为3个区域，为后面动画做调整 -->
+                  <div class="slider--el-bg">
+                    <div class="part left"></div>
+                    <div class="part mid"></div>
+                    <div class="part right"></div>
+                  </div>
+                  <div class="slider--el-content">
+                    <!-- 文字部分只是随意写的，可以修改成你使用的 -->
+                    <h2 class="slider--el-heading-h2" style="font-family:思源宋体 Heavy">荷兰花卉小镇</h2>
+                    <h4 class="slider--el-heading-h4" style="font-family: 'Lucida Handwriting';color:rgb(235, 107, 255)">Dutch Flower Town</h4>
+
+                  </div>
+                </div>
+            
+            
+                <!-- <div class="slider--el slider--el-5 anim-2parts">    
+                  <div class="slider--el-bg">
+                    <div class="part  top-left"></div>
+                    <div class="part  bot-right"></div>
+
+                  </div>
+                  <div class="slider--el-content">
+                    <h2 class="slider--el-heading">Fifth Slide</h2>
+                  </div>
+                </div> -->
+            
+            
+                <div class="slider--el slider--el-5 anim-2parts">    
+                  <!-- 第五张图背景分为2个区域，为后面动画做调整 -->
+                  <div class="slider--el-bg">
+                    <div class="part top left"></div>
+                    <div class="part bot right"></div>
+                  </div>
+                  <div class="slider--el-content">
+                    <!-- 文字部分只是随意写的，可以修改成你使用的 -->
+                    <h2 class="slider--el-heading-h2" style="font-family:kaiti">史诗级会晤</h2>
+                    <h4 class="slider--el-heading-h4" style="font-family: 'Comic Sans MS';color:rgb(255, 66, 52);text-shadow:0 0 10px #fff">Time To Cheers!</h4>
+
+                  </div>
+                </div>
+            
+            
+            
+            
+            
+            
+            
+                <div class="slider--control left">
+                  <label style="background-image: url('https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/AC8B5CA614DA0D9149A48648E1DF96C0.png');border-radius:50%;background-size:contain" class="page1-left" for="page1"></label>
+                  <label style="background-image: url('https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/AC8B5CA614DA0D9149A48648E1DF96C0.png');border-radius:50%;background-size:contain" class="page2-left" for="page2"></label>
+                  <label style="background-image: url('https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/AC8B5CA614DA0D9149A48648E1DF96C0.png');border-radius:50%;background-size:contain" class="page3-left" for="page3"></label>
+                  <label style="background-image: url('https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/AC8B5CA614DA0D9149A48648E1DF96C0.png');border-radius:50%;background-size:contain" class="page4-left" for="page4"></label>
+                  <label style="background-image: url('https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/AC8B5CA614DA0D9149A48648E1DF96C0.png');border-radius:50%;background-size:contain" class="page5-left" for="page5"></label>
+                
+                </div>
+                <div class="slider--control right">
+                  <label style="background-image: url('https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/8F3B9107EE0C04902D077E400AA09658.png');border-radius:50%;background-size:contain"  class="page1-right" for="page1"></label>
+                  <label style="background-image: url('https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/8F3B9107EE0C04902D077E400AA09658.png');border-radius:50%;background-size:contain" class="page2-right" for="page2"></label>
+                  <label style="background-image: url('https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/8F3B9107EE0C04902D077E400AA09658.png');border-radius:50%;background-size:contain" class="page3-right" for="page3"></label>
+                  <label style="background-image: url('https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/8F3B9107EE0C04902D077E400AA09658.png');border-radius:50%;background-size:contain" class="page4-right" for="page4"></label>
+                  <label style="background-image: url('https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/8F3B9107EE0C04902D077E400AA09658.png');border-radius:50%;background-size:contain" class="page5-right" for="page5"></label>
+                
+                </div>  
+
+
+            </div>
+    </div>
+    </div>
+
+    <div class="fujian" id="fujian">
+      <div class="FujianFont" ><h1 class="fu" style="font-family:kaiti;">福</h1><h1 class="jian" style="font-family:kaiti;">州</h1></div>
+      <div class="FujianFont span" style="font-family:youyuan;">有福之州</div>
+      <img class="fujianImg" style="z-index: -1;" src="https://tuce-1329849192.cos.ap-chengdu.myqcloud.com/IMG_2370.PNG" alt="">
+
+
+    </div>
+    <button class="unfold fufufu" id="fufufu" style="display:flex;justify-content:center; background-color: rgba(85, 89, 96, 0.938);margin-top:-5px">
+      <img  id="unfoldImg5" class="unfoldBut_down" src="font/angle-double-down.svg" style="position:absolute;height:100%;
+      " >
+      <img id="unfoldImg6" class="unfoldBut_up" src="font/angle-double-up.svg" style="position:absolute;height:100%;
+      " >
+  </button>
+
+  <div class="FujianBox"  id="FujianBox">
+    <input type="radio" id="slide1" name="Fujiangroup" checked>
+    <input type="radio" id="slide2" name="Fujiangroup">
+    <input type="radio" id="slide3" name="Fujiangroup">
+    <input type="radio" id="slide4" name="Fujiangroup">
+    <input type="radio" id="slide5" name="Fujiangroup">
+    <input type="radio" id="slide6" name="Fujiangroup">
+
+    <div class="dots">
+        <label for="slide1"></label>
+        <label for="slide2"></label>
+        <label for="slide3"></label>
+        <label for="slide4"></label>
+        <label for="slide5"></label>
+        <label for="slide6"></label>
+
+    </div>
+    <div class="Fujianslider" style="height: 100vh;">
+        <div class="FJslide" for="slide1" style="--img:url('https://tuce-1329849192.cos.ap-chengdu.myqcloud.com/fujian%20(3).JPG')">
+            <div class="FJcontent">
+                <h2>悬崖宝剑</h2>
+                <p style="color: yellow;">刀光剑影，侠骨柔情</p>
+                <br>
+                <span style="color: #fff;">友情摄影:不在玖walo(QQ:2849000490)</span>
+            </div>
+        </div>
+        <div class="FJslide" for="slide2" style="--img:url('https://tuce-1329849192.cos.ap-chengdu.myqcloud.com/258C4A2485BD7DF9CA66730FD7F690E7.png')">
+          <div class="FJcontent">
+            <h2>泉州开元寺塔</h2>
+            <p style="color:red">你曾为了大圣根器寻到这里......</p>
+        </div>
+        </div>
+        <div class="FJslide" for="slide3" style="--img:url('https://tuce-1329849192.cos.ap-chengdu.myqcloud.com/fujian%20(1).JPG')">
+          <div class="FJcontent">
+            <h2 >双层玻璃悬桥</h2>
+            <p style="margin-bottom:100px ;color: rgb(255, 255, 255);text-shadow:0 0 20px #000000">上边得小心翼翼，下边是步步惊心</p>
+            <span style="color: #fff;left:-70%;text-shadow:0 0 4px #000">友情摄影:不在玖walo(QQ:2849000490)</span>
+
+        </div>
+        </div>
+        <div class="FJslide" for="slide4" style="--img:url('https://tuce-1329849192.cos.ap-chengdu.myqcloud.com/fujian%20(5).JPG')">
+          <div class="FJcontent">
+            <h2>福州烟台山</h2>
+            <p style="text-shadow: 0 0 10px #fff;color:black">“万国建筑博物馆”</p>
+            <span style="color: #fff;text-shadow:0 0 4px #000">友情摄影:不在玖walo(QQ:2849000490)</span>
+
+        </div>
+        </div>
+        <div class="FJslide" for="slide5" style="--img:url('https://tuce-1329849192.cos.ap-chengdu.myqcloud.com/fujian%20(4).JPG')">
+          <div class="FJcontent">
+            <h2>三明:侠天下</h2>
+            <p>“侠客空间”</p>
+            <span style="color: #fff;text-shadow:0 0 4px #000">友情摄影:不在玖walo(QQ:2849000490)</span>
+
+        </div>
+        </div>
+        <div class="FJslide" for="slide6" style="--img:url('https://tuce-1329849192.cos.ap-chengdu.myqcloud.com/siguotang.JPG')">
+          <div class="FJcontent">
+            <h2>现已列入福建必吃榜</h2>
+            <p>你不得不品的四果汤</p>
+        </div>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class="loading-wrapper" style="transition:opacity 1s;z-index:1000">
+  <span style="--i:1">L</span>
+  <span style="--i:2">o</span>
+  <span style="--i:3">a</span>
+  <span style="--i:4">d</span>
+  <span style="--i:5">i</span>
+  <span style="--i:6">n</span>
+  <span style="--i:7">g</span>
+  <span style="--i:8">.</span>
+  <span style="--i:9">.</span>
+  <span style="--i:10">.</span>
+  </div>
+
+        <script src="js/index.js"></script>
+        <script src="js/footprint.js"></script>
+</body>
+</html>

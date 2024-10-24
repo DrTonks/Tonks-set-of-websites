@@ -1,0 +1,489 @@
+.AboutMe{
+    z-index: 0;
+    position: relative;
+    margin-top: 30px;
+}
+.AboutMe h1{
+    /*并非background-color*/
+    background: linear-gradient(270deg, #fff6a1, #6cffff, #ffd47d);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 100px;
+    z-index: 0;
+    margin: 0 ;
+    text-align: center;
+    font-weight: bold;
+    animation: flow 5s linear infinite; 
+   /* 并非auto */
+    background-size: 300% 300%; 
+    font-family: 'Lucida Handwriting',sans-serif;
+}
+.idcard1{
+    background-color: rgba(87, 87, 87, 0);
+    font-size: 30px;
+    display: flex;
+    justify-content: center; 
+    padding: 10px; 
+}
+.idbar{
+    display: flex;
+    width: 80%;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 10%;
+    z-index: 5;
+
+}
+/* .box{
+    flex: 1;/*等于flex-grow：1；flex-shrink：1；flex-basis：0%*//*
+    overflow: hidden;
+    margin: 0 10px;
+    box-shadow:10px 10px 10px #2e2e2e6c;
+    border: 10px solid #f3f3f3;
+    background-color: #f3f3f3;
+    transition: 0.5s;
+    border-radius: 15px;
+    height: 600px;
+    overflow-wrap:break-word;
+}
+.box img{
+    width: 200%;
+    height: 90%;
+    object-fit: cover;
+    transition: 0.5s;
+    
+}
+.box span{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(0, 69, 159);
+    text-align: center;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box h1{
+    position: absolute;
+    top: 20px;
+    width: 50%;
+    opacity: 0;
+    transition: 0.6s;
+   
+}
+.box:hover{
+    flex-basis: 40%;
+}
+.box:hover h1{
+    opacity: 1;
+}
+#spc{
+    width: 0;
+}
+
+.box:hover #spc{
+    width: 50%;
+}
+
+.box:hover img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+} */
+/* @keyframes flow {
+    0% {
+        background-position: 0% 50%; 
+    }
+    100% {
+        background-position: 100% 50%; 
+    }
+
+}  9.26:不生效 9.28：添加了照片墙，放在下面，生效，生效原因未知*/
+.photowall{
+    font-family: 'kaiti',sans-serif;
+    font-size: 25px;
+    text-align: center;
+    position: relative;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(240, 248, 255, 0);
+    align-items: center;
+}
+.photowall h1{
+   
+    background: linear-gradient(45deg, #ffe15df7,#00fff789, #ffe15df7);
+    animation: flow 2s linear infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 300% 300%; 
+}
+@keyframes flow {
+    0% {
+        background-position: 0% 50%; 
+    }
+    100% {
+        background-position: 100% 50%; 
+    }
+
+}
+.photo{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 100;
+    height: fit-content;
+}
+.pbody{
+    position: absolute;
+    left: 2.5%;
+    height: fit-content;
+    max-width: 95%;
+
+    column-gap: 15px;
+    column-count: 5;
+}
+.pbody .image{
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.pbody .image img{
+    width: 100%;
+    border-radius: 10px;
+}
+.pbody .image h2{
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    font-family: 'kaiti';
+    top: 10px;
+    color: #000000;
+    
+}
+.pbody .image:hover h2{
+    opacity: 1;
+}
+@media screen and (max-width : 1200px){
+    .pbody{
+        column-count: 4;
+    } 
+} 
+@media screen and (max-width : 768px){
+    .pbody{
+        column-count: 3;
+    } 
+    .phoneremix{
+        font-size: 15px;
+    }
+} 
+@media screen and (max-width : 600px){
+    .pbody{
+        column-count: 2;
+    } 
+    .phoneremix{
+        font-size: 15px;
+    }
+}      
+
+.wholecon{
+    position: relative;
+    height: 650px;
+    width: 100%;
+
+}
+.container{
+    width: 1000px;
+    height: 600px;
+    position: absolute;
+    bottom: -60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(203, 203, 203, 0);
+    padding: 50px;
+    box-shadow: 0 30px 50px #bdbdbd00;
+    
+}
+#slide{
+    width: max-content;
+    margin-top: 50px;
+
+}
+.item{
+    width: 200px;
+    height: 300px;
+    background-position: 50%,50%;
+    display: inline-block;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 30px 30px #6b6565;
+    border-radius: 20px;
+    transition: 0.5s;
+
+}
+.item:nth-child(1),
+.item:nth-child(2){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* 覆盖一下 */
+    transform: translateY(0%);
+    box-shadow: 0 0px 0px;
+
+}
+.item:nth-child(3){
+    left: 70%;
+}
+.item:nth-child(4){
+    left: calc(70% + 220px);/*+-号之前一定要有空格，否则在部分浏览器中不生效*/
+}
+/* .item:nth-child(n+5){这里很厉害的
+    left: calc(70% + 220px);
+    opacity:0;
+} */
+.item .content{
+    width: 300px;
+    position: absolute;
+    left: 100px;
+    top: 50%;
+    transform:translateY(-50%);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:aliceblue;
+    display:none;
+}
+.item:nth-child(2) .content{
+    display: block;
+
+}
+.item .name{
+    font-size: 40px;
+    font-weight: bold;
+    opacity: 0;
+    animation: showcontent 1s ease-in-out 0s 1 forwards;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+.item .des{
+    margin: 20px 0;
+    opacity: 0;
+    animation: showcontent 1s ease-in-out 0.3s 1 forwards;
+    padding: 2px;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.7);
+
+}
+
+@keyframes showcontent{
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+        filter: blur(20px);
+    }to{
+        opacity: 1;
+        transform: translateY(0);
+        filter:blur(0);
+    }
+}
+.buttons{
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+    margin-left: -50px;
+    text-align: end;
+    /* 对下文的inlineblock生效 */
+}
+.s_button{
+    display: inline-block;
+    width: 50px;
+    /* 垂直居中 */
+    height: 50px;
+
+    background-image: url('https://tonks-blog-1329849192.cos.ap-chengdu.myqcloud.com/8F3B9107EE0C04902D077E400AA09658.png') ;
+    background-size: cover;
+    opacity: 0.7;
+    border: 1px solid #555;
+    border-radius: 50%;
+    margin: 0 24px;
+    transition: 0.5s;
+}
+.s_button:hover{
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+@media screen and (max-width:768px){
+    .container{
+        width: 70%;
+        height: 600px;
+        position: absolute;
+        bottom: -60%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: rgba(203, 203, 203, 0);
+        padding: 50px;
+        box-shadow: 0 30px 50px #bdbdbd00;
+        overflow: hidden;
+    }
+    .buttons{
+        width: 100%;
+        position: absolute;
+        bottom: 50px;
+        margin-left: -50px;
+        text-align: center;
+        /* 对下文的inlineblock生效 */
+    }
+    #slide{
+        width: fit-content;
+        margin-top: 50px;
+    
+    }
+    .wholecon{
+        position: relative;
+        height: 650px;
+        width: 100%;
+
+    
+    }
+    .item{
+        width: 0px;
+        height: 0px;
+        background-position: 50%,50%;
+        display: inline-block;
+        background-size: cover;
+        
+        position: absolute;
+        top: 50%;
+        transform: translateY(0%);
+        box-shadow: 0 30px 30px #6b6565;
+        border-radius: 20px;
+        transition: 0.5s;
+
+    }
+
+    .item .content{
+        width: 300px;
+        position: absolute;
+        left: 5%;
+        top: 50%;
+        transform:translateY(-50%);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color:aliceblue;
+        display:none;
+        font-weight: bold;
+ 
+    }
+    .s_button{
+        opacity: 0.8;
+    }
+
+
+    /* .idbar{
+        display: flex;
+        width: 80%;
+        height: fit-content;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: 10%;
+        z-index: 5;
+        flex-direction: column;
+}
+.box{
+    flex: 1;
+    overflow: hidden;
+    margin: 10px 10px;
+    box-shadow:10px 10px 10px #2e2e2e6c;
+    border: 10px solid #f3f3f3;
+    background-color: #f3f3f3;
+    position: relative;
+    border-radius: 15px;
+    height: 500px;
+    display: block;
+    
+}
+ .box img{
+    width: 100%;
+    height: 20%;
+    object-fit: cover;
+    opacity: 1;
+}
+.box span{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(0, 69, 159);
+    text-align: center;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+.box h1{
+    display: none;
+    flex-wrap: wrap;
+    position: absolute;
+    opacity: 1;
+    transition: 0.6s;
+    padding: 3px;
+    font-size: 18px;
+    top:5px;
+    width: 100%;
+}
+.box:hover h1{
+    flex-wrap: wrap;
+    position: absolute;
+    opacity: 1;
+    transition: 0.6s;
+    padding: 5px;
+    font-size: 20px;
+    top:5px;
+    display:flex
+ }
+
+
+
+
+.box:hover h1{
+    opacity: 1;
+}
+.box:hover img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+} 
+.box .boxtext{
+    opacity: 0;
+}
+.box img:hover{
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+} 
+.box img:hover~h1{
+
+    opacity: 1;
+} 
+.box img:hover~#spc{
+    width: 100%;
+    opacity: 1;
+} 
+.box h1:hover{
+    opacity: 1;
+}
+.box #spc:hover {
+    opacity: 1;
+    width: 100%;
+} */
+}
